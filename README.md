@@ -11,9 +11,9 @@ The data for this study was used with permission from [Bear et al. (2024)](#Bear
 
 ## Repository Structure
 
-The main directory of this repository contains Google Colab notebooks used to run inference for the LLM via Groq playground, as well as for cleaning and analyzing the data. A description of each is below:
+The main directory of this repository contains Google Colab notebooks used to run inference for the LLM via the Groq playground API, as well as for cleaning and analyzing the data. A description of each is below:
 
-+ **ULLMs_Groq.ipynb** - This notebook contains the main code loop for making the API calls to the LLM for inference. A CSV file of responses is output to save the LLM's responses. 
++ **ULLMs_Groq.ipynb** - This notebook contains the main code loop for making the API calls to the LLM for inference. A CSV file of responses is output to save the LLM's responses. In order to do this, an API key must be provided as a secret in Google Colab under the name "groq_api_key". The API key will be sent along with the private data.
 + **Extract_values.ipynb** - This notebook contains the code used to extract the generations from the model in the saved JSON format.
 + **Data_Analysis.ipynb*** - This notebook contains the code used for the final data analysis of the extracted data from the model
 
